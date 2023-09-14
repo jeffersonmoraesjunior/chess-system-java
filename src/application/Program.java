@@ -18,7 +18,7 @@ public class Program {
 		while(true) {
 			try {
 				UI.clearScreen();
-				UI.printBoard(chessMatch.getPieces()); //não instanciei, coloquei a classe e o que seria pego nela (Peças)
+				UI.printMatch(chessMatch);
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
