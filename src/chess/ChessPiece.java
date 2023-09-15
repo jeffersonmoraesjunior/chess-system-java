@@ -17,6 +17,10 @@ public abstract class ChessPiece extends Piece{
 		return color;
 	}
 	
+	public ChessPosition getChessPosition() {
+		return ChessPosition.fromPosition(position);
+	}
+	
 	//Foi retirado o SET, pois a cor da peça não será editada e sim acessada.
 //	public void setColor(Color color) {
 //		this.color = color;
